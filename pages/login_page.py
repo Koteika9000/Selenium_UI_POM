@@ -2,8 +2,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
-from selenium.webdriver.common.action_chains import ActionChains
-import time
 from utilities.logging_config import logger
 import allure
 
@@ -18,7 +16,7 @@ class Login_page(Base):
     }
 
     credentials = {
-        "default_byuer": {"email": "Kupibeton@rambler.ru", "password": "Beton2024"},
+        "default_buyer": {"email": "Kupibeton@rambler.ru", "password": "Beton2024"},
         "admin": {"login": "...", "password": "..."},
         "smm": {"login": "...", "password": "..."},
         "dev": {"login": "...", "password": "..."},
